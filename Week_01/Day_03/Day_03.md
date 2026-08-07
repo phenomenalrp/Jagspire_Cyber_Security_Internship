@@ -1,1 +1,10 @@
+Day 3: Python Practice:
+1. Object-Oriented Programming (OOP)OOP organizes code into reusable blueprints called Classes to create Objects (instances).Key ConceptsClass: The blueprint defining attributes (data) and methods (behavior).init: The constructor method that initializes an object's attributes.self: Represents the specific instance of the class you are calling.Encapsulation: Hiding internal data and restricting direct access using private attributes (prefixed with double underscores __).
 
+2. In Python, requests is a highly popular, third-party library used to send HTTP requests to interact with web servers and APIs. It simplifies network communication by abstracting complex configurations into a human-friendly syntax, making tasks like data scraping or API integration effortless. 
+
+3. Python handles JSON data using its built-in json module, which provides functions to convert Python objects to JSON strings (and vice versa) and to read or write JSON files.The 4 Core FunctionsThe json module relies on four core functions. A simple trick to remember them: functions ending in "s" interact with strings, while functions without an "s" interact with files.
+
+4. File handling in Python is managed using the built-in open() function, which creates a file object to read, write, modify, or delete files. The most secure and efficient way to handle files is by using the with statement context manager, which automatically closes the file after its code block finishes, preventing memory leaks and data corruption.
+
+5. Python is one of the most popular languages for building and consuming REST APIs due to its clean syntax and powerful ecosystem of frameworks. A REST API allows different software applications to communicate over HTTP using standard methods like GET (read), POST (create), PUT (update), and DELETE (delete).
