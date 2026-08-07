@@ -27,4 +27,4 @@ Modern security operations rely on automated log analysis to isolate genuine thr
 ├── log_parser.py         # Python script to analyze and filter logs
 ├── sample.log            # Input file containing raw log records
 ├── suspicious_logs.txt   # Output file containing filtered threat events
-└── README.md             # Project documentation
+└── Day_06.md             # Project documentation
