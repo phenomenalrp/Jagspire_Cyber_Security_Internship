@@ -1,105 +1,76 @@
-Day 4 
+# Day 4: Networking, Wireshark & Log Analysis
 
-1. Basic Networking Concepts
-IP Address
+---
+
+## 1. Basic Networking Concepts
+
+### IP Address
 A unique identifier assigned to a device on a network.
-IPv4: 192.168.1.10
-IPv6: 2001:db8::1
+* **IPv4:** `192.168.1.10`
+* **IPv6:** `2001:db8::1`
 
-DNS (Domain Name System)
-Converts domain names into IP addresses.
-Example:
-google.com → 142.250.x.x
+### DNS (Domain Name System)
+Converts human-readable domain names into IP addresses.
+> **Example:** `google.com` $\rightarrow$ `142.250.x.x`
 
-HTTP vs HTTPS
-HTTP HTTPS
-Port 80 Port 443
-Unencrypted Encrypted (TLS/SSL)
-Less secure Secure
+### HTTP vs. HTTPS
 
-Common Ports
-Port Service
-20/21 FTP
-22 SSH
-23 Telnet
-25 SMTP
-53 DNS
-80 HTTP
-110 POP3
-143 IMAP
-443 HTTPS
-3389 RDP
+| Feature | HTTP | HTTPS |
+| :--- | :--- | :--- |
+| **Default Port** | 80 | 443 |
+| **Encryption** | Unencrypted (Plaintext) | Encrypted (TLS/SSL) |
+| **Security Level** | Less Secure | Secure |
 
+### Common Network Ports
 
-2. Wireshark Basics
-What is Wireshark?
-A network protocol analyzer used to capture and inspect network traffic.
-Common Display Filters
-ip.addr == 192.168.1.10
-http
-dns
-tcp.port == 443
-icmp
-tcp.flags.syn == 1
-What to Look For
-DNS queries
-HTTP requests
-TLS handshakes
-Failed TCP connections
-ICMP (ping) traffic
-Large or unusual data transfers
+| Port | Service / Protocol |
+| :--- | :--- |
+| **20 / 21** | FTP (File Transfer Protocol) |
+| **22** | SSH (Secure Shell) |
+| **23** | Telnet |
+| **25** | SMTP (Simple Mail Transfer Protocol) |
+| **53** | DNS (Domain Name System) |
+| **80** | HTTP (Hypertext Transfer Protocol) |
+| **110** | POP3 (Post Office Protocol v3) |
+| **143** | IMAP (Internet Message Access Protocol) |
+| **443** | HTTPS (HTTP Secure) |
+| **3389** | RDP (Remote Desktop Protocol) |
 
+---
 
-3. Basic Log Analysis
-Common Log Sources
-Windows Event Logs
-Linux Syslog
-Firewall Logs
-Web Server Logs
-IDS/IPS Logs (Snort, Suricata)
-SIEM Alerts (Wazuh, Splunk)
-Sample Log
+## 2. Wireshark Basics
+
+### What is Wireshark?
+A network protocol analyzer used to capture, inspect, and analyze network traffic in real time.
+
+### Common Display Filters
+* `ip.addr == 192.168.1.10` — Filters traffic involving a specific IP address
+* `http` — Displays HTTP traffic
+* `dns` — Displays DNS queries and responses
+* `tcp.port == 443` — Filters traffic on TCP port 443 (HTTPS)
+* `icmp` — Displays ICMP (ping) traffic
+* `tcp.flags.syn == 1` — Captures TCP SYN packets (connection requests)
+
+### Key Artifacts to Inspect
+* DNS queries and domain resolution
+* Plaintext HTTP requests/responses
+* TLS handshake sequences
+* Failed TCP connection attempts (e.g., port scans)
+* ICMP ping sweeps
+* Large or abnormal data transfers (potential data exfiltration)
+
+---
+
+## 3. Basic Log Analysis
+
+### Common Log Sources
+* **Windows Event Logs** (Security, System, Application)
+* **Linux Syslog** (`/var/log/syslog`, `/var/log/auth.log`)
+* **Firewall Logs** (Allowed/Blocked traffic)
+* **Web Server Logs** (Apache, Nginx, IIS)
+* **IDS/IPS Logs** (Snort, Suricata)
+* **SIEM Alerts** (Wazuh, Splunk, Microsoft Sentinel)
+
+### Sample Log Entry
+```text
 2026-08-04 10:12:33 LOGIN_FAILED user=admin ip=192.168.1.50
-Questions to ask:
-Who attempted the login?
-From which IP?
-How many attempts?
-Is it repeated?
-Is the IP known or suspicious?
-
-
-4. Understanding System & Network Events
-Normal Events
-Successful login
-DNS lookup
-File creation
-Web browsing
-Suspicious Events
-Multiple failed logins
-New administrator account
-Unusual outbound connections
-PowerShell or Command Prompt launched unexpectedly
-Large data uploads
-Connections to unknown IP addresses
-Practical Exercises
-Exercise 1: Wireshark
-Start a packet capture.
-Visit a few websites.
-Apply these filters:
-dns
-http
-tcp
-tls
-Identify:
-Your DNS queries
-Destination IPs
-HTTPS traffic
-
-Exercise 2: Log Analysis
-Create a file called sample.log:
-INFO User login successful
-WARNING Multiple failed login attempts
-ERROR SQL Injection attempt detected
-INFO File uploaded
-WARNING Brute force attack suspected
-Write a Python script that prints only the WARNING and ERROR entries.
