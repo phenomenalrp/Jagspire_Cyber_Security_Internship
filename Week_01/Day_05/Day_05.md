@@ -1,0 +1,3 @@
+Write the python script: Fetch API data, parse JSON, and save to a file.
+Run script locally...
+Practice github push workflow
