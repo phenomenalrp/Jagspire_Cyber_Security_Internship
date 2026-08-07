@@ -1,0 +1,7 @@
+=== Suspicious Log Report ===
+
+2026-08-06 09:15:11 WARNING Multiple failed login attempts from 192.168.1.10
+2026-08-06 09:20:45 ERROR SQL Injection attempt detected
+2026-08-06 09:30:51 WARNING Brute Force attack suspected
+2026-08-06 09:40:12 ERROR Unauthorized access detected
+2026-08-06 09:45:01 WARNING Port scanning activity detected
