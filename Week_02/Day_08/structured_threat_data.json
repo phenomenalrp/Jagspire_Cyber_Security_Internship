@@ -1,0 +1,37 @@
+[
+    {
+        "indicator": "185.220.101.42",
+        "ioc_type": "ip",
+        "threat": "Suspicious Tor Exit Node",
+        "severity": "high",
+        "source": "Mock Threat Intelligence Feed"
+    },
+    {
+        "indicator": "45.155.205.233",
+        "ioc_type": "ip",
+        "threat": "Brute Force Activity",
+        "severity": "high",
+        "source": "Mock Threat Intelligence Feed"
+    },
+    {
+        "indicator": "malicious-example.com",
+        "ioc_type": "domain",
+        "threat": "Phishing Domain",
+        "severity": "high",
+        "source": "Mock Threat Intelligence Feed"
+    },
+    {
+        "indicator": "updates-example.net",
+        "ioc_type": "domain",
+        "threat": "Suspicious Domain",
+        "severity": "medium",
+        "source": "Mock Threat Intelligence Feed"
+    },
+    {
+        "indicator": "http://evil-example.org/login",
+        "ioc_type": "url",
+        "threat": "Credential Phishing",
+        "severity": "high",
+        "source": "Mock Threat Intelligence Feed"
+    }
+]
