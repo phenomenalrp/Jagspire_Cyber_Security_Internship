@@ -34,11 +34,11 @@ Enriched JSON
 ## Project Structure
 
 ```text
-day09_log_enrichment/
+Day_09/
 ├── log_enrichment.py
 ├── raw_logs.json
 ├── enriched_logs.json
-└── README.md
+└── Day_09.md
 ```
 
 ## Technologies Used
