@@ -1,0 +1,52 @@
+[
+    {
+        "timestamp": "2026-08-09 10:15:23",
+        "source_ip": "185.220.101.42",
+        "event": "Failed login",
+        "service": "SSH",
+        "device_type": "Linux Server",
+        "country": "Germany",
+        "region": "Europe",
+        "severity": "Medium"
+    },
+    {
+        "timestamp": "2026-08-09 10:17:41",
+        "source_ip": "45.155.205.233",
+        "event": "Brute force attempt",
+        "service": "SSH",
+        "device_type": "Linux Server",
+        "country": "Netherlands",
+        "region": "Europe",
+        "severity": "High"
+    },
+    {
+        "timestamp": "2026-08-09 10:21:08",
+        "source_ip": "192.168.1.25",
+        "event": "Successful login",
+        "service": "Web Application",
+        "device_type": "Windows",
+        "country": "Unknown",
+        "region": "Unknown",
+        "severity": "Low"
+    },
+    {
+        "timestamp": "2026-08-09 10:25:32",
+        "source_ip": "10.0.0.15",
+        "event": "Unauthorized access",
+        "service": "Database",
+        "device_type": "Linux Server",
+        "country": "Unknown",
+        "region": "Unknown",
+        "severity": "High"
+    },
+    {
+        "timestamp": "2026-08-09 10:30:17",
+        "source_ip": "8.8.8.8",
+        "event": "DNS query",
+        "service": "DNS",
+        "device_type": "Unknown",
+        "country": "United States",
+        "region": "North America",
+        "severity": "Low"
+    }
+]
