@@ -1,0 +1,30 @@
+[
+    {
+        "event_id": "EVT001",
+        "source_ip": "185.220.101.42",
+        "domain": "malicious-example.com",
+        "repeated_activity": true,
+        "severity": "High"
+    },
+    {
+        "event_id": "EVT002",
+        "source_ip": "192.168.1.25",
+        "domain": "example.com",
+        "repeated_activity": false,
+        "severity": "Low"
+    },
+    {
+        "event_id": "EVT003",
+        "source_ip": "45.155.205.233",
+        "domain": "unknown-domain.xyz",
+        "repeated_activity": false,
+        "severity": "Medium"
+    },
+    {
+        "event_id": "EVT004",
+        "source_ip": "10.0.0.15",
+        "domain": "internal.local",
+        "repeated_activity": true,
+        "severity": "Medium"
+    }
+]
