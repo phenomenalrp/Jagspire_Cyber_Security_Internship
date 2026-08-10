@@ -55,11 +55,11 @@ Generate Explanation
 ## Project Structure
 
 ```text
-day10_risk_scoring/
+Day_10/
 ├── risk_scoring.py
 ├── sample_input.json
 ├── risk_score_output.json
-└── README.md
+└── Day_10.md
 ```
 
 ## Technologies Used
