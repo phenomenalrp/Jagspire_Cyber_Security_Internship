@@ -1,0 +1,66 @@
+[
+    {
+        "event_id": "EVT001",
+        "timestamp": "2026-08-11 09:10:15",
+        "source_ip": "185.220.101.42",
+        "event": "Brute force attempt",
+        "severity": "High",
+        "risk_score": 9
+    },
+    {
+        "event_id": "EVT002",
+        "timestamp": "2026-08-11 09:15:22",
+        "source_ip": "192.168.1.25",
+        "event": "Successful login",
+        "severity": "Low",
+        "risk_score": 0
+    },
+    {
+        "event_id": "EVT003",
+        "timestamp": "2026-08-11 09:18:43",
+        "source_ip": "45.155.205.233",
+        "event": "Suspicious connection",
+        "severity": "High",
+        "risk_score": 8
+    },
+    {
+        "event_id": "EVT004",
+        "timestamp": "2026-08-11 09:21:10",
+        "source_ip": "10.0.0.15",
+        "event": "Failed login",
+        "severity": "Medium",
+        "risk_score": 4
+    },
+    {
+        "event_id": "EVT005",
+        "timestamp": "2026-08-11 09:25:31",
+        "source_ip": "8.8.8.8",
+        "event": "DNS query",
+        "severity": "Low",
+        "risk_score": 1
+    },
+    {
+        "event_id": "EVT006",
+        "timestamp": "2026-08-11 09:30:17",
+        "source_ip": "185.220.101.42",
+        "event": "Repeated failed login",
+        "severity": "High",
+        "risk_score": 9
+    },
+    {
+        "event_id": "EVT007",
+        "timestamp": "2026-08-11 09:35:44",
+        "source_ip": "172.16.0.10",
+        "event": "Password change",
+        "severity": "Low",
+        "risk_score": 0
+    },
+    {
+        "event_id": "EVT008",
+        "timestamp": "2026-08-11 09:40:12",
+        "source_ip": "45.155.205.233",
+        "event": "Port scanning",
+        "severity": "High",
+        "risk_score": 7
+    }
+]
