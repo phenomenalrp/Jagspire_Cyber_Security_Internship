@@ -1,0 +1,15 @@
+{
+    "total_anomalous_ips": 1,
+    "anomalies": [
+        {
+            "source_ip": "45.155.205.233",
+            "total_events": 6,
+            "failed_logins": 6,
+            "anomaly": true,
+            "reasons": [
+                "Unusual login activity (6 attempts)",
+                "Repeated failed access (6 failures)"
+            ]
+        }
+    ]
+}
